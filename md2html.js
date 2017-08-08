@@ -8,7 +8,7 @@ document.head.append(link);
 
 link = document.createElement('link');
 link.rel = 'stylesheet';
-link.href = chrome.extension.getURL('github.min.css');
+link.href = chrome.extension.getURL('atom-one-light.min.css');
 document.head.append(link);
 
 hljs.initHighlighting();

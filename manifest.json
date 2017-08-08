@@ -18,7 +18,6 @@
         ]
     }],
     "web_accessible_resources": [
-        "github.min.css",
-        "theme.css"
+        "*.css"
     ]
 }
