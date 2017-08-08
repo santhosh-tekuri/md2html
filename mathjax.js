@@ -1,3 +1,4 @@
 script = document.createElement('script');
-script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML'
+script.type = 'text/javascript';
+script.src = chrome.extension.getURL('MathJax/MathJax.js')+'?config=TeX-AMS-MML_HTMLorMML';
 document.body.append(script);
