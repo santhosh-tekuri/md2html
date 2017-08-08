@@ -1,0 +1,10 @@
+body {
+  font-family: Optima, Candara, Calibri, Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 85%;
+  background: #f9f9f9;
+}

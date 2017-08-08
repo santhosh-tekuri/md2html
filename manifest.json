@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "md2html",
+    "version": "0.1",
+    "description": "View Markdown files as HTML",
+    "content_scripts": [{
+        "matches": [
+            "*://*/*.md",
+            "file:///*.md"
+        ],
+        "js": [
+            "showdown.min.js",
+            "highlight.min.js",
+            "go.min.js",
+            "md2html.js",
+            "math-code.js",
+            "mathjax.js"
+        ]
+    }],
+    "web_accessible_resources": [
+        "github.min.css",
+        "theme.css"
+    ]
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Marked in the browser</title>
+  <link rel="stylesheet" href="theme.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.2/showdown.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
+
+</head>
+<body>
+  <div id="content">
+# hello
+
+# A Plain Markdown Post
+
+I can `statically` certainly further reduce the code, for example, by eliminating the CSS,  
+but I believe a tiny bit CSS can greatly improve readability. You cannot really find many CSS frameworks that only contain 50 lines of code.
+
+![asf](https://golang.org/doc/gopher/help.png)
+
+```java
+public static void main(String args[]) {
+}
+```
+
+```go
+func main(){
+    fmt.Println("sdf")
+}
+```
+i have $20 and you have $10
+
+running time: `$O(n^2)$`
+
+`$$O(X_2)$$`
+
+  </div>
+  <script>
+    elem = document.getElementById('content')
+    converter = new showdown.Converter();
+    elem.innerHTML = converter.makeHtml(elem.innerHTML)
+
+    hljs.initHighlightingOnLoad();
+  </script>
+
+  <script src="https://yihui.name/js/math-code.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</body>
+</html>
