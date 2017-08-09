@@ -8,6 +8,9 @@
             "*://*/*.md",
             "file:///*.md"
         ],
+        "exclude_matches": [
+            "https://github.com/*"
+        ],
         "js": [
             "showdown.min.js",
             "highlight.min.js",
