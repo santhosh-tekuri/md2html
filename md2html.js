@@ -1,3 +1,4 @@
+showdown.setOption('requireSpaceBeforeHeadingText', true);
 converter = new showdown.Converter();
 document.body.innerHTML = converter.makeHtml(document.body.innerText);
 
