@@ -1,16 +1,57 @@
+@include-when-export url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('./open_sans/400.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('./open_sans/400i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('./open_sans/700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('./open_sans/700i.woff') format('woff')
+}
+
 body {
-  font-family: Optima, Candara, Calibri, Arial, sans-serif;
-  font-size: 120%;
+  font-family: "Open Sans";
+  line-height: 1.6;
   max-width: 800px;
   margin: auto;
 }
 
 code {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: Consolas, "Lucida Console", Monaco, monospace;
   font-size: 85%;
   line-height: 150%;
   background: #f7f9fa;
   border: 1px solid #e6e8db;
   padding: 1px 3px 1px 3px;
+}
+
+hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-bottom: 1px solid #ddd;
 }
 
