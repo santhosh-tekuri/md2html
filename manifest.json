@@ -13,6 +13,7 @@
         ],
         "js": [
             "showdown.min.js",
+            "emoji.js",
             "highlight.min.js",
             "go.min.js",
             "md2html.js",
@@ -23,6 +24,7 @@
     "web_accessible_resources": [
         "*.css",
         "MathJax/*",
-        "open_sans/*"
+        "open_sans/*",
+        "emojis/*"
     ]
 }

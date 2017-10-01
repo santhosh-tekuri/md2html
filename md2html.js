@@ -1,6 +1,10 @@
 showdown.setOption('requireSpaceBeforeHeadingText', true);
 showdown.setOption('tables', true);
-converter = new showdown.Converter();
+converter = new showdown.Converter({
+    extensions: [
+        'emoji'
+    ]
+});
 document.body.innerHTML = converter.makeHtml(document.body.innerText);
 
 // set page title from first <h1> content
