@@ -4,7 +4,7 @@
 showdown.extension("emoji", function() {
   return [{
     type: "lang",
-    regex: ":([A-z0-9_-]+):",
+    regex: ":([A-z0-9_]+):",
     replace: function(original, emojiName) {
       var src = chrome.extension.getURL('emojis/'+emojiName+'.png')
       return `<img src="${src}" alt="${emojiName}" class="emoji" />`;
