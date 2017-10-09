@@ -18,7 +18,8 @@
             "go.min.js",
             "md2html.js",
             "math-code.js",
-            "mathjax.js"
+            "mathjax.js",
+            "youtube.js"
         ]
     }],
     "web_accessible_resources": [
