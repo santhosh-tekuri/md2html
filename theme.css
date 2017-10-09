@@ -68,7 +68,8 @@ code {
     font-family: Consolas, "Lucida Console", Monaco, monospace;
     font-size: 85%;
     line-height: 150%;
-    background: #f7f9fa;
+    background: #f8f8f8;
+    border-radius: 3px;
     border: 1px solid #e6e8db;
     padding: 1px 3px 1px 3px;
 }
