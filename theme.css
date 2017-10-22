@@ -35,12 +35,19 @@
     height: 22px;
 }
 
+html {
+    background: #CCC;
+    padding-bottom: 100vh; /* allow scrolling past end of page */
+}
+
 body {
+    background: #FFF;
     font-family: "Open Sans";
     line-height: 1.6;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
-    padding-bottom: 100vh; /* allow scrolling past end of page */
+    margin-top: 20px;
+    padding: 50px;
 }
 a {
     color: #4183C4;
