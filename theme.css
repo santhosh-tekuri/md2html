@@ -48,6 +48,7 @@ body {
     margin: auto;
     margin-top: 20px;
     padding: 50px;
+    min-height: 87vh;
 }
 a {
     color: #4183C4;
