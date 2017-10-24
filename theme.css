@@ -47,8 +47,8 @@ body {
     max-width: 900px;
     margin: auto;
     margin-top: 20px;
-    padding: 50px;
-    min-height: calc(100vh - 140px);
+    padding: 100px;
+    min-height: calc(100vh - 240px);
     box-shadow: 0 0 10px;
 }
 
