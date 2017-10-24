@@ -49,6 +49,7 @@ body {
     margin-top: 20px;
     padding: 50px;
     min-height: calc(100vh - 140px);
+    box-shadow: 0 0 10px;
 }
 
 a {
