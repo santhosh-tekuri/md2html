@@ -59,6 +59,12 @@ a:hover {
     text-decoration: underline;
 }
 
+h1 {
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 40px;
+}
+
 h1, h2, h3 {
     font-weight: normal;
 }
@@ -84,14 +90,10 @@ code {
     padding: 1px 3px 1px 3px;
 }
 
-hr {
-    height: 4px;
-    padding: 0;
-    margin: 16px 0;
-    background-color: #e7e7e7;
-    border: 0 none;
-    overflow: hidden;
-    box-sizing: content-box;
-    border-bottom: 1px solid #ddd;
+hr { 
+    background-color: #fff;
+    border: 0;
+    border-top: 2px dashed #8c8b8b;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
