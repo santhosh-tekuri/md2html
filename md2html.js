@@ -15,9 +15,6 @@ converter = new showdown.Converter({
         'emoji'
     ]
 });
-if (!document.doctype) {
-    document.write('<!doctype HTML>\n' + document.head.outerHTML + document.body.outerHTML);
-}
 document.body.innerHTML = converter.makeHtml(document.body.innerText);
 
 // set page title from first <h1> content
