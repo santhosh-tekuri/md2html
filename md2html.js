@@ -1,3 +1,13 @@
+function addCSS(url) {
+    link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = chrome.extension.getURL(url);
+    document.head.append(link);
+}
+
+addCSS('theme.css');
+addCSS('atom-one-light.min.css');
+
 showdown.setOption('requireSpaceBeforeHeadingText', true);
 showdown.setOption('tables', true);
 converter = new showdown.Converter({
@@ -17,15 +27,5 @@ if(h1Elements.length>0) {
     title.innerText = h1Elements[0].innerText;
     document.head.append(title)
 }
-
-link = document.createElement('link');
-link.rel = 'stylesheet';
-link.href = chrome.extension.getURL('theme.css');
-document.head.append(link);
-
-link = document.createElement('link');
-link.rel = 'stylesheet';
-link.href = chrome.extension.getURL('atom-one-light.min.css');
-document.head.append(link);
 
 hljs.initHighlighting();
